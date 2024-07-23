@@ -24,6 +24,9 @@ jobs:
     - name: Copy .env
       run: cp .env.example .env
 
+    - name: Debug .env configuration
+      run: cat .env
+
     - name: Set up MySQL host
       run: echo "DB_HOST=mysql" >> .env
 
